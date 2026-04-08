@@ -2,27 +2,31 @@ html {
     scroll-behavior: smooth; 
 }
 
+/* Estilos generales del cuerpo de la pagina */
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    margin: 0;
-    background-color: rgb(10, 141, 141);
-    color: white;
-    line-height: 1.6;
+    font-family: 'Poppins', Arial, sans-serif; 
+    margin: 0; 
+    background-color: rgb(10, 141, 141); /* Color de fondo */
+    color: white; 
+    line-height: 1.6; 
 }
 
+/* Encabezado principal de la pagina */
 header {
     background-color: rgb(10, 141, 141);
     color: white;
-    text-align: center;
+    text-align: center; /* Alinea el texto al centro */
     padding: 60px 20px;
 }
 
+/* Imagen del header de la pagina */
 .img-header {
-    border-radius: 50%;
+    border-radius: 50%; /* Hace la imagen redonda */
     border: 4px solid white;
     margin: 20px 0;
 }
 
+/* Botón principal */
 .btn-cta {
     display: inline-block;
     background-color: white;
@@ -32,22 +36,25 @@ header {
     font-weight: bold;
     border-radius: 25px;
     margin-top: 20px;
-    transition: 0.3s;
+    transition: 0.3s; /* Animación suave de 3 segundos */
 }
 
+/* Efecto hover del botón */
 .btn-cta:hover {
     background-color: rgb(41, 11, 110);
     color: white;
 }
 
+/* Menú fijo al hacer scroll */
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+/* Lista del menú */
 nav ul {
-    display: flex;
+    display: flex; /* Alinea horizontal */
     justify-content: center;
     background-color: black;
     list-style: none;
@@ -55,10 +62,12 @@ nav ul {
     padding: 0;
 }
 
+/* Cada elemento del menú */
 nav li {
     padding: 15px;
 }
 
+/* Enlaces del menú */
 nav a {
     color: white;
     text-decoration: none;
@@ -66,10 +75,12 @@ nav a {
     transition: 0.3s;
 }
 
+/* Efecto hover del menú */
 nav a:hover {
     color: rgb(10, 141, 141);
 }
 
+/* Sección nosotros */
 .seccion-nosotros {
     background-color: white;
     color: #333;
@@ -77,15 +88,17 @@ nav a:hover {
     text-align: center;
 }
 
+/* Contenedor flexible */
 .contenido-nosotros {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Se adapta en móviles */
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
 }
 
+/* Historia */
 .historia {
     flex: 2;
     min-width: 300px;
@@ -96,6 +109,7 @@ nav a:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Caja lateral */
 .info-adicional {
     flex: 1;
     background-color: #f4f4f4;
@@ -105,16 +119,19 @@ nav a:hover {
     min-width: 250px;
 }
 
+/* Lista de valores */
 .lista-valores {
     list-style: square;
     padding-left: 20px;
 }
 
+/* Secciones generales */
 section {
     padding: 80px 20px;
     text-align: center;
 }
 
+/* Servicios */
 #servicios {
     background-color: rgb(10, 141, 141); 
 }
@@ -125,6 +142,7 @@ section {
     margin-bottom: 40px;
 }
 
+/* Grid de servicios */
 .servicios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -133,6 +151,7 @@ section {
     margin: 0 auto;
 }
 
+/* Tarjetas */
 .servicio-card {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
@@ -141,11 +160,13 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Efecto hover de las tarjeta */
 .servicio-card:hover {
     transform: translateY(-10px);
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Imágenes dentro de las tarjetas */
 .servicio-card img {
     width: 100%;
     height: 180px;
@@ -163,6 +184,7 @@ section {
     color: #f0f0f0;
 }
 
+/* Sección contacto con grid */
 #contacto {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -207,6 +229,7 @@ footer {
     color: white;
 }
 
+/* Sección del mapa de google */
 .contenedor-mapa {
     grid-column: 3;
     grid-row: 2 / 7;
