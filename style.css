@@ -164,8 +164,40 @@ section {
 }
 
 #contacto {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    justify-content: start;
+    padding: 20px 500px;
     background-color: #f9f9f9;
     color: #333;
+    gap: 10px 30px;
+}
+
+#contacto h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+#contacto img {
+    grid-column: 1;
+    grid-row: 2 / 6;
+    max-width: 150px;
+    height: auto;
+}
+
+#contacto p {
+    grid-column: 2;
+    margin: 0;
+    text-align: left;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+#contacto strong {
+    color: rgb(10, 141, 141);
 }
 
 footer {
@@ -173,4 +205,25 @@ footer {
     text-align: center;
     background-color: rgb(41, 11, 110);
     color: white;
+}
+
+.contenedor-mapa {
+    grid-column: 3;
+    grid-row: 2 / 7;
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    align-self: center;
+    border: 2px solid rgb(10, 141, 141);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#contacto strong {
+    color: rgb(10, 141, 141);
 }
